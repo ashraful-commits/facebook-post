@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container bg-light">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-header bg-primary">
+                        <div class="my-2">
+                            <h1 class="text-center text-white">Facebook</h1>
+                        </div>
+                        
+                            <!-- modal  -->
+
+                            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-primary">
+                                      <h5 class="modal-title text-white" id="staticBackdropLabel">Create Post</h5>
+                                      <button type="button" class="close rounded rounded-circle btn btn-light border-0" data-bs-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true" class="h5">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="m-1 d-flex justify-content-start align-items-center">
+                                          <img  style="width: 70px;height:70px" src="https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?k=20&m=1179420343&s=612x612&w=0&h=G2UGMVSzAXGAQs3pFZpvWlHNRAzwPIWIVtSOxZHsEuc=" alt="" class=" p-3 border-1 border-dark rounded rounded-circle me-2 ">
+                                          <h5>Md.Ashraful Alam</h5>
+                                      </div>
+                                      <div class="msg"></div>
+                                      <form id="facbook_form">
+                                              <input type="text" placeholder="What's on your mind, Mohammad Ashraful Alam?" class="form-control border-info my-3" name="heading" id="">
+                                              <label for="image">Photo</label>
+                                              <input type="text" class="form-control border border-info bg-light my-3 " name="photo" id="">
+                                              <button type="submit" class="btn btn-primary w-100 my-3">post</button>
+                                      </form>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- modal end  -->
+                    </div>
+                    <div class="card-body">
+                        <div class="my-3  d-flex align-items-center shadow-sm">
+                            <img  style="width: 70px;height:70px" src="https://media.istockphoto.com/photos/smiling-man-outdoors-in-the-city-picture-id1179420343?k=20&m=1179420343&s=612x612&w=0&h=G2UGMVSzAXGAQs3pFZpvWlHNRAzwPIWIVtSOxZHsEuc=" alt="" class=" p-3 border-1 border-dark rounded rounded-circle me-2 ">
+                            <input type="text" placeholder="What's on your mind, Mister?" name="" id="post_field" class="form-control bg-light w-75 h-25" data-bs-target="#staticBackdrop" data-bs-toggle="modal">
+                        </div>
+                        <div class="my-3">
+                            <ul  id="output" class="list-group">
+
+                            </ul>
+                        
+                        
+                        </div>
+
+                        </div>
+                    </div>
+                    <div class="card-footer"> 
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/function.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+</body>
+</html>
